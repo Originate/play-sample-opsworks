@@ -1,0 +1,24 @@
+DEPENDENCIES
+  app
+    path: .
+    metadata: true
+  play2
+    git: https://github.com/Originate/cookbooks.git
+    revision: a0440c945007034e74911b62a2d3096545ac7e51
+    rel: play2
+
+GRAPH
+  app (0.1.0)
+    play2 (~> 0.1.0)
+  artifact (1.10.3)
+    windows (~> 1.8.0)
+  aws (2.4.0)
+  chef_handler (1.1.6)
+  java (1.14.0)
+    aws (>= 0.0.0)
+    windows (>= 0.0.0)
+  play2 (0.1.0)
+    artifact (~> 1.10.3)
+    java (~> 1.14.0)
+  windows (1.8.10)
+    chef_handler (>= 0.0.0)
